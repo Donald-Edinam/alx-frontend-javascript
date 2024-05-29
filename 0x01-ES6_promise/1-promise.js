@@ -1,16 +1,16 @@
-export default function (success){
+export default function (boolean){
     return new Promise((resolve, reject) => {
         
-        success_object = {
+        const object = {
             status: 200, 
-            body: "Success"
+            body: "Success",
         }
 
-        if(success === true){
-            resolve(success_object)
+        if(boolean === true){
+            resolve(object);
         }
         else{
             reject(Error("This fake API is not working currently"));
         }
-    })
+    });
 }
