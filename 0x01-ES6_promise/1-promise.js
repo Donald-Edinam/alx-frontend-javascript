@@ -1,16 +1,14 @@
-export default function (boolean){
-    return new Promise((resolve, reject) => {
-        
-        const object = {
-            status: 200, 
-            body: "Success",
-        }
+export default function (boolean) {
+  return new Promise((resolve, reject) => {
+    const object = {
+      status: 200,
+      body: 'Success',
+    };
 
-        if(boolean === true){
-            resolve(object);
-        }
-        else{
-            reject(Error("This fake API is not working currently"));
-        }
-    });
+    if (boolean === true) {
+      resolve(object);
+    } else {
+      reject(Error('The fake API is not working currently'));
+    }
+  });
 }
