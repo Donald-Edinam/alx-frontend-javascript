@@ -1,16 +1,14 @@
-export default function getFullResponseFromAPI(success){
+export default function (boolean) {
     return new Promise((resolve, reject) => {
-        
-        success_object = {
-            status: 200, 
-            body: "Success"
-        }
-
-        if(success){
-            resolve(success_object)
-        }
-        else{
-            reject("This fake API is not working currently");
-        }
-    })
-}
+      const object = {
+        status: 200,
+        body: 'Success',
+      };
+  
+      if (boolean === true) {
+        resolve(object);
+      } else {
+        reject(Error('The fake API is not working currently'));
+      }
+    });
+  }
