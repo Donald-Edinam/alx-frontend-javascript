@@ -7,7 +7,7 @@ export default function getFullResponseFromAPI(success){
         }
 
         if(success){
-            resolve()
+            resolve(success_object)
         }
         else{
             reject("This fake API is not working currently");
