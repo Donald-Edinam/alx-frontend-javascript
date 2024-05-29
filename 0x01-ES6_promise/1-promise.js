@@ -10,7 +10,7 @@ export default function (success){
             resolve(success_object)
         }
         else{
-            reject("This fake API is not working currently");
+            reject(Error("This fake API is not working currently"));
         }
     })
 }
