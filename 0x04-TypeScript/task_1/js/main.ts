@@ -12,8 +12,8 @@ interface Directors extends Teacher {
 }
 
 const teacher1: Teacher = {
-    firstName: 'Kofi',
-    lastName: 'Manu',
+    firstName: 'John',
+    lastName: 'Doe',
     fullTimeEmployee: true,
     location: 'Obuasi',
     contract: false,
@@ -37,7 +37,7 @@ interface printTeacherFunction {
 
 export const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => `${firstName[0]}. ${lastName}`;
 
-console.log(printTeacher('john', 'doe'));
+console.log(printTeacher('John', 'doe'));
 
 interface StudentClassInterface {
     firstName: string;
